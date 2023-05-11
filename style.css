@@ -1,70 +1,49 @@
-/* Variabes */  
-$orange: #ffa600;
-$grey:#f3f3f3;
-$white: #fff;
-$base-color:$orange ;
+body{
+  font-family:sans-serif;
+  text-align: center;
+  background-color:gold;
+  text-transform:uppercase;
+  padding:40px;
+  border:20px;
+  margin:20px;
+  font-size:30px;
+  
 
-
-/* Mixin's */  
-@mixin transition {
--webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
 }
-@mixin corners ($radius) {
--moz-border-radius: $radius;
--webkit-border-radius: $radius;
-border-radius: $radius; 
--khtml-border-radius: $radius; 
+h1{
+  color:dimgray;
+  font-style:italic;
 }
-
-body {
-background:$base-color;
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-height:100%;
+#button-start{
+  border-radius:30%;
+  border-color: red;
+  background-color: green;
+  text-transform:uppercase;
+  text color: white;
+  text size:50px;
+  font-size: 40px;
 }
-
-.wrapper {
-width: 800px;
-margin: 30px auto;
-color:$white;
-text-align:center;
+#button-stop{
+  border-radius:30%;
+  border-color: red;
+  background-color: green;
+  text-transform:uppercase;
+  text color: white;
+  text size:50px;
+  font-size:40px;
 }
-
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 2.6em;
-  text-transform: uppercase;
+#button-reset{
+  border-radius:30%;
+  border-color: red;
+  background-color: green;
+  text-transform:uppercase;
+  text color: white;
+  text size:50px;
+  font-size:40px;
 }
-
-#seconds, #tens{
-  font-size:2em;
+#seconds{
+  font-size:50px;
 }
-
-button{
-@include corners (5px);
-background:$base-color;
-color:$white;
-border: solid 1px $white;
-text-decoration:none;
-cursor:pointer;
-font-size:1.2em;
-padding:18px 10px;
-width:180px;
-margin: 10px;
- outline: none;
-  &:hover{
-  @include transition;
-  background:$white;
-  border: solid 1px $white;
-  color:$base-color;
-  }
+#tens{
+  font-size: 50px;
 }
-
-
-
-
-
-
-
